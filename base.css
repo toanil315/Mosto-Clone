@@ -1,0 +1,167 @@
+:root {
+    --white: #fff;
+    --secondary-color: #DB5155;
+    --container: 117rem;
+    --warapper: 192rem; 
+}
+
+body {
+    overflow-x: hidden;
+    counter-reset: how-counter;
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 62.5%;
+    background-color: #F0F5FC;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+#wrapper {
+    max-width: var(--warapper);
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.container {
+    max-width: var(--container);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    width: 16rem;
+    height: 5rem;
+    border: 1px solid #655AB0;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--white);
+    transition: color 0.25s linear, background-color 0.25s linear;
+}
+
+.btn:hover {
+    color: #EE4730;
+    background-color: var(--white);
+}
+
+input[type=range] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%;
+    height: 1.5rem;
+    margin: 0;
+    border-radius: 3rem;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1.5rem;
+    background: #FFE9CF;
+    border-radius: 3rem;
+    cursor: pointer;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #dc3893;
+    margin-top: -7.5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 999    ;
+  }
+
+  input[type=range]::-webkit-slider-thumb::after {
+      display: block;
+      content: "<";
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 2rem;
+      color: var(--white);
+      z-index: 9999;
+  }
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes anima-trans {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-194rem);
+    }
+}
+
+@keyframes anima-trans-mob {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc( -76.7rem));
+    }
+}
+
+@keyframes anima-spin {
+    
+        0% {
+           transform: rotate(0) translate(-10px, -10px);
+        }  
+     
+        50% {
+            transform: rotate(360deg) translate(-100px, -100px);
+        }
+        100% {
+            transform: rotate(0) translate(100px, 100px);
+        }
+        
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+        visibility: visible;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
