@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> parent of 3dc89a0... Revert "Mosto-Clone"
 var featuresList = document.querySelectorAll('.features-2__item');
 var featuresImg = document.querySelectorAll('.features-2__main-img'); 
 
@@ -34,8 +31,8 @@ input.addEventListener("input", function() {
     else {
         inputBack.style.width = `calc(${input.value}% + 5px)`;
     }
-<<<<<<< HEAD
-})
-=======
-})
->>>>>>> parent of 3dc89a0... Revert "Mosto-Clone"
+
+});
+
+
+

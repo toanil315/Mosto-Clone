@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> parent of 3dc89a0... Revert "Mosto-Clone"
+
 /*--------------------------------------HEADER--------------------------------------------*/
 .header {
     background-image: url(./img/banner-bg-1.jpg);
@@ -28,7 +26,7 @@
 .header-shape {
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
 }
 
